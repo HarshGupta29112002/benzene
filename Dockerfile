@@ -4,7 +4,7 @@ WORKDIR /app
 COPY viviana-frontend/package*.json ./viviana-frontend/
 COPY viviana-frontend/ ./viviana-frontend/
 WORKDIR /app/viviana-frontend
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN npm run build
 
 # Build stage for admin
@@ -13,7 +13,7 @@ WORKDIR /app
 COPY viviana-admin/package*.json ./viviana-admin/
 COPY viviana-admin/ ./viviana-admin/
 WORKDIR /app/viviana-admin
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN npm run build
 
 # Production stage

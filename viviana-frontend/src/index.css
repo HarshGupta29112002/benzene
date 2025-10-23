@@ -78,7 +78,7 @@ p,a,button,li{
 
 @font-face {
     font-family: 'Roxborough';
-    src: url('assets/fonts/Roxborough_CF.ttf') format('truetype');
+    src: url('/assets/fonts/Roxborough_CF.ttf') format('truetype');
 }
 .font-roxborough {
     font-family: 'Roxborough', serif;
