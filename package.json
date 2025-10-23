@@ -1,0 +1,16 @@
+{
+  "name": "viviana",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "viviana-frontend",
+    "viviana-admin",
+    "viviana-backend"
+  ],
+  "scripts": {
+    "start": "cd viviana-backend && npm start",
+    "build:frontend": "cd viviana-frontend && npm run build",
+    "build:admin": "cd viviana-admin && npm run build",
+    "build:backend": "cd viviana-backend && npm install"
+  }
+}
